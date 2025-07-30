@@ -6,14 +6,14 @@ public class Conta {
     private double saldo;
     private String senha;
 
-    public Conta(String numero, String titular, double saldo){
+    public Conta(String numero, String titular, double saldo, String senha){
         this.numero = numero;
         this.titular = titular;
         this.saldo = 0.0;
         this.senha = senha;
     }
 
-    public boolean sacar(){
+    public boolean sacar(double valor){
         if(valor > 0 && saldo >= valor){
             saldo -= valor;
             return true;

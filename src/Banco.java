@@ -7,12 +7,12 @@ public class Banco {
     private List<Conta> contas = new ArrayList<>();
 
     public void adicionarConta(Conta conta) {
-        conta.add(conta);
+        contas.add(conta);
     }
 
-    public Conta autenticar(String titular, String senha) {
+    public Conta autenticar(String numeroConta, String senha) {
         for (Conta conta : contas) {
-            if (conta.getNumero().equals(titular) && conta.getSenha().equals(senha)) {
+            if (conta.getNumero().equals(numeroConta) && conta.getSenha().equals(senha)) {
                 return conta;
             }
         }
