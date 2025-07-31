@@ -1,21 +1,19 @@
-# Banco
+# Sistema Bancário em Java
 
-Este projeto é um sistema bancário simples desenvolvido em Java. Ele permite a criação e gerenciamento de contas bancárias, incluindo operações básicas como depósito, saque e consulta de saldo.
+Este projeto é um sistema bancário simples desenvolvido em Java, permitindo operações como autenticação de usuário, consulta de saldo, depósito e saque.
 
 ## Estrutura do Projeto
 - **src/**: Código-fonte principal
   - **Main.java**: Classe principal para execução do programa
-  - **Menu.java**: Gerencia o menu de opções do sistema
-  - **Banco.java**: Lógica central do banco
-  - **controller/**: Controladores das operações
-  - **model/**: Modelos das entidades (Conta, ContaBancaria)
-  - **view/**: Interface de visualização (se aplicável)
+  - **view/Menu.java**: Gerencia o menu de opções e interação com o usuário
+  - **controller/Banco.java**: Lógica central do banco, autenticação e gerenciamento de contas
+  - **model/Conta.java**: Modelo da entidade Conta, com métodos para saque, depósito e autenticação
 
 ## Como Executar
 1. Certifique-se de ter o Java instalado (JDK 8 ou superior).
 2. Compile os arquivos:
    ```sh
-   javac src/*.java src/model/*.java src/controller/*.java
+   javac src/*.java src/model/*.java src/controller/*.java src/view/*.java
    ```
 3. Execute o programa principal:
    ```sh
@@ -23,15 +21,20 @@ Este projeto é um sistema bancário simples desenvolvido em Java. Ele permite a
    ```
 
 ## Funcionalidades
-- Criar conta bancária
+- Autenticação de conta bancária (número e senha)
+- Consultar saldo
 - Realizar depósito
 - Realizar saque
-- Consultar saldo
-- Listar contas
+
+## Exemplo de Uso
+Ao iniciar o programa, informe o número da conta e a senha para autenticação. Após o login, utilize o menu para realizar operações:
+- [1] Consultar saldo
+- [2] Depositar
+- [3] Sacar
+- [0] Sair
 
 ## Autor
 - Matheus Cavalheiro de Camargo
 
 ## Licença
 Este projeto é livre para uso educacional.
-

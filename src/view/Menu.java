@@ -1,6 +1,7 @@
+package view;
 
 import model.Conta;
-
+import controller.Banco;
 
 import java.util.List;
 import java.util.Scanner;
@@ -20,7 +21,7 @@ public class Menu {
         System.out.println("Por favor, informe a sua senha: ");
         String senhaInformada = scanner.nextLine();
 
-        Scanner.nextLine();
+
         Conta contaLogada = banco.autenticar(numeroConta, senhaInformada);
 
         if(contaLogada == null){

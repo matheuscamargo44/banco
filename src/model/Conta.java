@@ -9,7 +9,7 @@ public class Conta {
     public Conta(String numero, String titular, double saldo, String senha){
         this.numero = numero;
         this.titular = titular;
-        this.saldo = 0.0;
+        this.saldo = saldo;
         this.senha = senha;
     }
 
