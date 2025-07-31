@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/README.md">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/README.md" />
+              <option name="updatedContent" value="# Banco&#10;&#10;Este projeto é um sistema bancário simples desenvolvido em Java. Ele permite a criação e gerenciamento de contas bancárias, incluindo operações básicas como depósito, saque e consulta de saldo.&#10;&#10;## Estrutura do Projeto&#10;- **src/**: Código-fonte principal&#10;  - **Main.java**: Classe principal para execução do programa&#10;  - **Menu.java**: Gerencia o menu de opções do sistema&#10;  - **Banco.java**: Lógica central do banco&#10;  - **controller/**: Controladores das operações&#10;  - **model/**: Modelos das entidades (Conta, ContaBancaria)&#10;  - **view/**: Interface de visualização (se aplicável)&#10;&#10;## Como Executar&#10;1. Certifique-se de ter o Java instalado (JDK 8 ou superior).&#10;2. Compile os arquivos:&#10;   ```sh&#10;   javac src/*.java src/model/*.java src/controller/*.java&#10;   ```&#10;3. Execute o programa principal:&#10;   ```sh&#10;   java -cp src Main&#10;   ```&#10;&#10;## Funcionalidades&#10;- Criar conta bancária&#10;- Realizar depósito&#10;- Realizar saque&#10;- Consultar saldo&#10;- Listar contas&#10;&#10;## Autor&#10;- Seu nome aqui&#10;&#10;## Licença&#10;Este projeto é livre para uso educacional.&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
